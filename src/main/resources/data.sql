@@ -1,0 +1,1 @@
+insert into rol (nombre) values ('ADMINISTRADOR'),('AUDITOR'),('AUXILIAR');

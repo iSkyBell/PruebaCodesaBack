@@ -1,11 +1,17 @@
 package com.example.prueba.services.interfaz;
 
-import com.example.prueba.model.User;
+import com.example.prueba.model.UserDTO;
 
 import java.util.List;
 
 public interface UserService {
 
-    List<User> get(String name);
+    List<UserDTO> get(String name);
+
+    UserDTO save(UserDTO user);
+
+    UserDTO update(UserDTO user);
+
+    void delete(Long id);
 
 }

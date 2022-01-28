@@ -1,18 +1,20 @@
 package com.example.prueba.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
-public class User {
+@Table(name="usuario")
+public class UserDTO {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_usuario")
     private Long id;
+    @Column(name = "id_rol")
     private Long idRol;
+    @Column(name = "nombre")
     private String name;
+    @Column(name = "activo")
     private boolean active;
 
     public Long getId() {
